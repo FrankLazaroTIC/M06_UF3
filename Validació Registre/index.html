@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validació del Registre</title>
+</head>
+<body>
+    <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+        <label for="username">Nom d'usuari:</label>
+        <input type="text" id="username" name="username"><br><br>
+
+        <label for="email">Correu electrònic:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="password">Contrasenya:</label>
+        <input type="password" id="password" name="password"><br><br>
+        <div id="requisitosPass" style="color: red;"></div><br>
+
+        <label for="confirmPassword">Confirmar contrasenya:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword"><br><br>
+
+        <label for="postalAddress">Adreça postal:</label>
+        <input type="text" id="postalAddress" name="postalAddress"><br><br>
+
+        <button type="submit">Registrar</button>
+    </form>
+
+    <div id="error-messages"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

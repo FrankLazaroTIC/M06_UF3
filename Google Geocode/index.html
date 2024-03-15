@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Google Maps API Example</title>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwEQr8flR0CtMZ-jSs9hK8lscYUMOtVPk&callback=initMap" async defer></script>
+        <script src="script.js"></script>
+    </head>
+    <style>
+    #map {
+        height: 400px;
+        width: 600px;
+        margin-bottom: 20px;
+    }
+    </style>
+    <body>
+        
+        <div id="map"></div>
+        <button type="button" onclick="initMap()" class="btn btn-secondary" id="findLoc">Buscar adreça</button>
+        <input type="text" name="lat" value="" id="latitude" placeholder="lat" hidden/>
+        <input type="text" name="lng" value="" id="longitude" placeholder="lng" hidden/>
+        <button type="button" onclick="laTevaUbi()" class="btn btn-secondary" id="findLoc">La teva ubicació</button>
+        <input type="text" name="adreca" value="Carrer de la Selva de Mar 211 08020 Barcelona" id="adreca" size="40"/>
+    
+
+    </body>
+</html>
